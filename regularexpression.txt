@@ -1,0 +1,18 @@
+RE for signed integers
+
+(+|-)(1|2|3)(0|1|2|3)*
+((+|-)(1|2|3)(0|1|2|3)*)
+
+RE for variable names:
+(a|b|c)(0|1|2|3|a|b|c|_)*
+
+
+RE for keywords:
+while|if|class|def
+
+
+Regular Expression for list:
+([) (number | ((number + comma)+ number))+ (])  
+number = ((+|-)(1|2|3)(0|1|2|3)*)
+comma =(,)
+([)(((+|-)(1|2|3)(0|1|2|3)*)|((((+|-)(1|2|3)(0|1|2|3)*)(,))*((+|-)(1|2|3)(0|1|2|3)*)))(])
